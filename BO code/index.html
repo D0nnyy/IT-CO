@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BO dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <script script src="main.js" defer></script>
+</head>
+<body>
+    <h1>Login</h1>
+    <form>
+        <label for="email">Email/username:</label>
+        <input type="email" id="email" name="email" required><br><br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br><br>
+        <input type="submit" value="Submit">
+      </form>
+      <div id="error-message"></div>
+      <script>
+        const form = document.querySelector('form');
+        const errorMessage = document.querySelector('#error-message');
+  
+        form.addEventListener('submit', (event) => {
+          event.preventDefault();
+  
+          const email = form.elements['email'].value;
+          const password = form.elements['password'].value;
+  
+          if (email !== 'example@example.com' || password !== 'password') {
+            errorMessage.textContent = 'Invalid email or password.';
+          } else {
+            errorMessage.textContent = '';
+            // submit the form
+          }
+        });
+      </script>
+</body>
+</html>
