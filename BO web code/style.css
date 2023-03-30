@@ -6,6 +6,10 @@
 body {
     background-color: #f2f2f2;
     font-family: Arial, sans-serif;
+    background-image: url('img/IT&CO_LOGO_.jpeg');
+    background-size: cover; /* scale the image to cover the entire form */
+    background-position: center; /* center the image */
+    background-repeat: no-repeat;
   }
   
   h1 {
