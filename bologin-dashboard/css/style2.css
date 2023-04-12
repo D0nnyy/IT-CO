@@ -27,6 +27,7 @@ h1 {
   border-radius: 1rem;
   box-shadow: black;
   padding: 4rem;
+  margin: 2rem;
   display: flex;
   flex-direction: column;
   gap: 4rem;
