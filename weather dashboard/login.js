@@ -11,6 +11,6 @@ form.addEventListener('submit', (event) => {
         errorMessage.textContent = 'Invalid email or password.';
     } else {
         errorMessage.textContent = '';
-        window.location.href = 'dashboardf/dashboard.html';
+        window.location.href = 'dashboardf/weather dashboard.html';
     }
 });

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Amsterdam Weather Dashboard</title>
+  <meta name="description" content="Bekijk het actuele weer in Amsterdam op ons dashboard.">
+  <script src="script.js" defer></script>
+  <link rel="stylesheet" href="css/style2.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="logo-container">
+      <img src="img/it-en-co-logo-j.webp" alt="IT&CO Logo" class="logo">
+    </div>
+    <h1>Dashboard</h1>
+  </div>
+  <div class="cards">
+    <div class="card">
+      <h2>Current Temperature</h2>
+      <div class="card-data">
+        <p class="temp"></p>
+        <p class="description"></p>
+      </div>
+    </div>
+    <div class="card">
+      <h2>Min/Max Temperature</h2>
+      <div class="card-data">
+        <p class="min-temp"></p>
+        <p class="max-temp"></p>
+      </div>
+    </div>
+    <div class="card">
+      <h2>Humidity</h2>
+      <div class="card-data">
+        <p class="humidity"></p>
+      </div>
+    </div>
+    <div class="card">
+      <h2>Light amount</h2>
+      <div class="card-data">
+        <p class="light-amount"></p>
+      </div>
+    </div>
+    <div class="card">
+      <h2>Wind Speed/Direction</h2>
+      <div class="card-data">
+        <p class="wind-speed"></p>
+        <p class="wind-direction"></p>
+      </div>
+    </div>
+    <div class="card">
+      <h2>Sunrise/Sunset</h2>
+      <div class="card-data">
+        <p class="sunrise"></p>
+        <p class="sunset"></p>
+      </div>
+    </div>
+    <div class="card">
+      <h2>Arduino Controls</h2>
+      <div class="card-data">
+        <p>Light 1:</p>
+        <button id="light1OnButton">ON</button>
+        <button id="light1OffButton">OFF</button>
+        <br>
+        <p>Light 2:</p>
+        <button id="light2OnButton">ON</button>
+        <button id="light2OffButton">OFF</button>
+        <br>
+        <p>Light 3:</p>
+        <button id="light3OnButton">ON</button>
+        <button id="light3OffButton">OFF</button>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
